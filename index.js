@@ -1,6 +1,6 @@
 const express = require('express');
 const connection = require('./connection')
-const student = require('./routes/student');
+const student = require('./routes/Student');
 const app = express();
 connection();
 app.use(express.json())
