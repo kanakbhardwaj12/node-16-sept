@@ -21,7 +21,7 @@ async function getStudents(req,res) {
 }
 async function getStudentByRollNo(req,res) {
     try{
-        let rollNo = pasrseInt(req.params.rollNo);
+        let rollNo = parseInt(req.params.rollNo);
         let student = await Student.findOne({ rollNo:rollNo });
         console.log(student,'student');
         res.send(student)
